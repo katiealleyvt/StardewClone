@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="PracticeProject"
+config/name="Stardew Clone (Practice)"
 run/main_scene="res://scenes/scenes/home.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
