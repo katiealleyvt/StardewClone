@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://entm41pawlt4"]
+
+[ext_resource type="Texture2D" uid="uid://286njj83pitn" path="res://assets/ui/UI_all.png" id="1_oylxj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6nbk"]
+atlas = ExtResource("1_oylxj")
+region = Rect2(-4.90786, 352, 161.645, 107.763)
+
+[node name="Dialogue" type="CanvasLayer"]
+
+[node name="BoxContainer" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Box" type="TextureRect" parent="BoxContainer"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -182.5
+offset_top = -235.0
+offset_right = 182.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("AtlasTexture_o6nbk")
+
+[node name="TextContainer" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.409
+anchor_top = 0.716
+anchor_right = 0.591
+anchor_bottom = 0.932
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Text" type="Label" parent="TextContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
